@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/catalog.css">
+    <title>Catalog — Sentinel</title>
+    <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicons/favicon.svg" />
+    <link rel="shortcut icon" href="favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="favicons/site.webmanifest" />
+</head>
+
+<body>
+    <!-- хедлайн + навбар -->
+    <header class="sentinel-header" id="sentinel-header">
+
+        <!-- главный хедер вверху -->
+        <h1 class="sentinel-heading">SENTINEL</h1>
+
+        <!-- навбар -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark black-navbar">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Переключатель навигации">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item me-5 custom-margin">
+                            <a class="nav-link" href="cart.html"><img class="img-fluid" id="shopping-cart"
+                                    src="img/shopping-cart.svg" alt="shopping-cart" title="Перейти в корзину"></a>
+                        </li>
+                        <li class="nav-item me-5 custom-margin">
+                            <a class="nav-link" aria-current="page" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item me-5 custom-margin">
+                            <a class="nav-link active" href="catalog.html">Магазин</a>
+                        </li>
+                        <li class="nav-item me-5 custom-margin">
+                            <a class="nav-link" href="leave-review.html">Оставить отзыв</a>
+                        </li>
+                        <li class="nav-item me-5 custom-margin">
+                            <a class="nav-link"
+                                href="https://docs.google.com/document/d/1Q8ilpNiYS8Bm-1XsLSa6kfAyMpSe_cumKoAbiisHeFA/edit?usp=sharing"
+                                target="_blank">Использование кода</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Дополнительно
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="reviews.html">Посмотреть отзывы клиентов</a>
+                                </li>
+                                <li><a class="dropdown-item" href="https://progen1tor.github.io/Sentinel/"
+                                        target="_blank" id="first-part">Перейти на первую часть
+                                        проекта</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- каталог товаров  -->
+    <section class="catalog-section">
+        <!-- хедер каталога -->
+        <h2 class="catalog-title">КАТАЛОГ ТОВАРОВ</h2>
+        <!-- кнопки для сортировки -->
+        <div class="sorting-buttons">
+            <input type="button" class="btn sort-btn me-4" id="sort-by-price-up" value="По цене&nbsp;&nbsp;&nbsp;↑">
+            <input type="button" class="btn sort-btn me-4" id="sort-by-price-down" value="По цене&nbsp;&nbsp;&nbsp;↓">
+            <input type="button" class="btn sort-btn me-4" id="sort-by-alphabet" value="По алфавиту">
+            <input type="button" class="btn sort-btn" id="reset-sorting" value="Сбросить">
+        </div>
+        <!-- форма  -->
+        <form class="cart-form" action="https://yandex.com/search?" target="_blank" id="selected-products"
+            name="selected-products">
+            <!-- сетка карточек товаров три ряда по четыре карточки -->
+            <div class="container" id="container">
+                <!-- первый ряд -->
+                <div
+                    class="row justify-content-center row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 row-cols-xxl-4">
+                    <div class="col mb-4 d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/ip-cam-card-1.png" class="card-img-top" alt="ip-cam">
+                            <div class="card-body">
+                                <h5 class="card-title">IP-камера наружного наблюдения</h5>
+                                <p class="card-text">Высокое разрешение, ночная подсветка, защита от влаги и пыли.</p>
+                                <p class="card-text price-card-text">Цена: 8.991₽</p>
+                                <div class="order">
+                                    <p class="card-text ">Заказать</p>
+                                    <input type="number" class="w-75 form-control order-input" name="ip-cam" id="ip-cam"
+                                        value="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4 d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/alarm-system-card-2.png" class="card-img-top" alt="alarm-system">
+                            <div class="card-body">
+                                <h5 class="card-title">Умная сигнализация с модулем GSM-связи</h5>
+                                <p class="card-text">Подключение к смартфону, моментальные уведомления о проникновении.
+                                </p>
+                                <p class="card-text price-card-text">Цена: 17.909₽</p>
+                                <div class="order">
+                                    <p class="card-text ">Заказать</p>
+                                    <input type="number" class="w-75 form-control order-input" name="alarm-system"
+                                        id="alarm-system" value="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4 d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/motion-sensor-card-3.png" class="card-img-top" alt="motion-sensor">
+                            <div class="card-body">
+                                <h5 class="card-title">Датчик движения для помещений</h5>
+                                <p class="card-text">Чувствительный PIR-сенсор, мгновенная реакция и умная адаптация к
+                                    среде.</p>
+                                <p class="card-text price-card-text">Цена: 10.990₽</p>
+                                <div class="order">
+                                    <p class="card-text ">Заказать</p>
+                                    <input type="number" class="w-75 form-control order-input" name="motion-sensor"
+                                        id="motion-sensor" value="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4 d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/video-recorder-card-4.png" class="card-img-top" alt="video-recorder">
+                            <div class="card-body">
+                                <h5 class="card-title">Профессиональный Wi-Fi видеодомофон</h5>
+                                <p class="card-text">Доступ к видео с телефона, двусторонняя высококачественная связь.
+                                </p>
+                                <p class="card-text price-card-text">Цена: 11.340₽</p>
+                                <div class="order">
+                                    <p class="card-text ">Заказать</p>
+                                    <input type="number" class="w-75 form-control order-input" name="video-recorder"
+                                        id="video-recorder" value="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- второй ряд  -->
+                <div
+                    class="row justify-content-center row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 row-cols-xxl-4">
+                    <div class="col mb-4 d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/electronic-safe-card-5.png" class="card-img-top" alt="electronic-safe">
+                            <div class="card-body">
+                                <h5 class="card-title">Электронный сейф с кодовым замком</h5>
+                                <p class="card-text">Ударопрочный корпус, подходит для документов и ценных вещей.</p>
+                                <p class="card-text price-card-text">Цена: 18.399₽</p>
+                                <div class="order">
+                                    <p class="card-text ">Заказать</p>
+                                    <input type="number" class="w-75 form-control order-input" name="electronic-safe"
+                                        id="electronic-safe" value="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4 d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/doors-card-6.png" class="card-img-top" alt="doors">
+                            <div class="card-body">
+                                <h5 class="card-title">Входные двери повышенной защиты</h5>
+                                <p class="card-text">Сталь 2 мм, противоударное покрытие, замок повышенной надежности.
+                                </p>
+                                <p class="card-text price-card-text">Цена: 28.105₽</p>
+                                <div class="order">
+                                    <p class="card-text ">Заказать</p>
+                                    <input type="number" class="w-75 form-control order-input" name="doors" id="doors"
+                                        value="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4 d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/cables-card-7.png" class="card-img-top" alt="cables">
+                            <div class="card-body">
+                                <h5 class="card-title">Кабельная продукция для охранных систем</h5>
+                                <p class="card-text">Питание и передача видео, герметичная изоляция, до 50 м.</p>
+                                <p class="card-text price-card-text">Цена: 7.078₽</p>
+                                <div class="order">
+                                    <p class="card-text ">Заказать</p>
+                                    <input type="number" class="w-75 form-control order-input" name="cables" id="cables"
+                                        value="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4 d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/dashcam-card-8.png" class="card-img-top" alt="dashcam">
+                            <div class="card-body">
+                                <h5 class="card-title">Многофункциональный видеорегистратор</h5>
+                                <p class="card-text">Поддержка 4 – 8 камер, запись в 4К качестве, удаленный доступ.</p>
+                                <p class="card-text price-card-text">Цена: 13.690₽</p>
+                                <div class="order">
+                                    <p class="card-text ">Заказать</p>
+                                    <input type="number" class="w-75 form-control order-input" name="dashcam"
+                                        id="dashcam" value="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- третий ряд  -->
+                <div
+                    class="row justify-content-center row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 row-cols-xxl-4">
+                    <div class="col mb-4 d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/searchlight-card-9.png" class="card-img-top" alt="searchlight">
+                            <div class="card-body">
+                                <h5 class="card-title">Светодиодный прожектор с датчиком</h5>
+                                <p class="card-text">Регулировка яркости, широкий угол освещения, низкое
+                                    энергопотребление.</p>
+                                <p class="card-text price-card-text">Цена: 2.399₽</p>
+                                <div class="order">
+                                    <p class="card-text ">Заказать</p>
+                                    <input type="number" class="w-75 form-control order-input" name="searchlight"
+                                        id="searchlight" value="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4 d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/control-system-card-10.png" class="card-img-top" alt="control-system">
+                            <div class="card-body">
+                                <h5 class="card-title">Система контроля доступа с карточками</h5>
+                                <p class="card-text">Управление входом, журнал событий, совместимость с RFID.</p>
+                                <p class="card-text price-card-text">Цена: 15.554₽</p>
+                                <div class="order">
+                                    <p class="card-text ">Заказать</p>
+                                    <input type="number" class="w-75 form-control order-input" name="control-system"
+                                        id="control-system" value="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4 d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/rotating-cam-card-11.png" class="card-img-top" alt="rotating-cam">
+                            <div class="card-body">
+                                <h5 class="card-title">Умная PTZ-камера видеонаблюдения</h5>
+                                <p class="card-text">Удаленное управление, обзор 360°, встроенный микрофон и динамик.
+                                </p>
+                                <p class="card-text price-card-text">Цена: 7.440₽</p>
+                                <div class="order">
+                                    <p class="card-text ">Заказать</p>
+                                    <input type="number" class="w-75 form-control order-input" name="rotating-cam"
+                                        id="rotating-cam" value="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4 d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/power-kit-card-12.png" class="card-img-top" alt="power-kit">
+                            <div class="card-body">
+                                <h5 class="card-title">Источник питания для охранных систем</h5>
+                                <p class="card-text">Автономная работа до 6 часов, защита от перегрузок и замыканий.</p>
+                                <p class="card-text price-card-text">Цена: 9.855₽</p>
+                                <div class="order">
+                                    <p class="card-text ">Заказать</p>
+                                    <input type="number" class="w-75 form-control order-input" name="power-kit"
+                                        id="power-kit" value="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- кнопки -->
+            <div class="buttons">
+                <input type="submit" class="btn order-btn" value="Сделать заказ">
+                <a class="btn order-btn cart-lnk" id="cart-lnk" href="#">Открыть корзину</a>
+            </div>
+
+        </form>
+    </section>
+
+    <!-- футер главной страницы -->
+    <footer class="footer-black text-white py-4">
+
+        <!-- первая часть футера: якорь наверх и соцсети -->
+        <div class="first-footer-part">
+
+            <!-- наверх  -->
+            <div class="go-up">
+                <a href="#sentinel-header" title="Наверх">⏏</a>
+            </div>
+
+            <!-- соцсети -->
+            <div class="social">
+                <a href="mailto:akmn140@gmail.com" target="_blank"><i class="bi bi-person-circle footer-icon"></i></a>
+                <a href="https://github.com/progen1tor" target="_blank"><i class="bi bi-github footer-icon"></i></a>
+                <a href="https://t.me/ob1101" target="_blank"><i class="bi bi-telegram footer-icon"></i></a>
+            </div>
+        </div>
+
+        <span class="border-top footer-divider"></span>
+
+        <!-- вторая часть футера: лицензия  -->
+        <div class="sec-footer-part">
+            <a href="https://docs.google.com/document/d/1ztQ5R3w9ewzbD-YblNddGogWkwsDoaPU1uzVj_aNad0/edit?usp=sharing"
+                target="_blank">© 2025, Sentinel.</a>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="js/catalog.js"></script>
+    <script src="js/device-test.js"></script>
+</body>
+
+</html>

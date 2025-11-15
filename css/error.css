@@ -1,0 +1,57 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    background-color: #000000;
+    font-family: 'Tektur', sans-serif;
+    scroll-behavior: smooth;
+    min-height: 100%;
+    position: relative;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error {
+    border: 3px solid rgb(255, 0, 0);
+    border-radius: 0px;
+}
+
+.error-img {
+    border-radius: 0;
+}
+
+.error-body {
+    background-color: black;
+    color: white;
+    padding: 0.6rem 1.5rem 2.7rem 1.5rem;
+    border-radius: 0;
+}
+
+.error-title {
+    font-size: 2rem;
+}
+
+.error-txt {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.error-btn {
+    background-color: red;
+    border: 1px solid red;
+    transition: all 1s ease;
+    font-size: 1.1rem;
+    width: 160px;
+    font-weight: 500;
+}
+.error-btn:hover, .error-btn:active {
+    background-color: rgb(105, 1, 1) !important;
+    border: 1px solid rgb(105, 1, 1) !important;
+}

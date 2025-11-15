@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main-page.css">
+    <title>Store homepage — Sentinel</title>
+    <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicons/favicon.svg" />
+    <link rel="shortcut icon" href="favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="favicons/site.webmanifest" />
+</head>
+
+<body>
+    <!-- хедлайн + навбар -->
+    <header class="sentinel-header" id="sentinel-header">
+
+        <!-- главный хедер вверху -->
+        <h1 class="sentinel-heading">SENTINEL</h1>
+
+        <!-- навбар -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark black-navbar">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Переключатель навигации">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item me-5 custom-margin">
+                            <a class="nav-link" href="cart.html"><img class="img-fluid" id="shopping-cart"
+                                    src="img/shopping-cart.svg" alt="shopping-cart" title="Перейти в корзину"></a>
+                        </li>
+                        <li class="nav-item me-5 custom-margin">
+                            <a class="nav-link active" aria-current="page" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item me-5 custom-margin">
+                            <a class="nav-link" href="catalog.html">Магазин</a>
+                        </li>
+                        <li class="nav-item me-5 custom-margin">
+                            <a class="nav-link" href="leave-review.html">Оставить отзыв</a>
+                        </li>
+                        <li class="nav-item me-5 custom-margin">
+                            <a class="nav-link" href="https://docs.google.com/document/d/1Q8ilpNiYS8Bm-1XsLSa6kfAyMpSe_cumKoAbiisHeFA/edit?usp=sharing" target="_blank">Использование кода</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Дополнительно
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="reviews.html">Посмотреть отзывы клиентов</a>
+                                </li>
+                                <li><a class="dropdown-item" href="https://progen1tor.github.io/Sentinel/" target="_blank" id="first-part">Перейти на первую часть
+                                        проекта</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- мейн контент страницы -->
+    <section class="main-page-sections">
+
+        <!-- первая секция -->
+        <div class="main-page-section-one" id="section-one">
+
+            <!-- хедлайн первой секции -->
+            <h2 class="section-one-headline headline">
+                О НАС — НАДЁЖНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕЙ БЕЗОПАСНОСТИ
+            </h2>
+
+            <!-- карточки первой секции -->
+            <div class="container">
+                <div class="row d-flex justify-content-center gap-5 custom-card-gap">
+                    <div class="col-auto">
+                        <div class="card text-bg-dark" style="width: 27rem;">
+                            <img src="img/security-camera.png" class="card-img-top" alt="security-camera">
+                            <div class="card-body card-body-upper">
+                                <h5 class="card-title">ЧТО МЫ ПРЕДЛАГАЕМ</h5>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Современные системы видеонаблюдения: IP, уличные и
+                                    внутренние камеры</li>
+                                <li class="list-group-item">Умные сигнализации и надёжные датчики движения</li>
+                                <li class="list-group-item">Усиленные двери, сейфы и замки повышенной безопасности</li>
+                                <li class="list-group-item">Комплектующие, кабели и аксессуары для охранных систем</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#section-two" class="card-link">Почему мы?</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="card text-bg-dark" style="width: 27rem;">
+                            <img src="img/security.png" class="card-img-top" alt="security">
+                            <div class="card-body card-body-upper">
+                                <h5 class="card-title">ПЛЮСЫ НАШЕЙ ПЛАТФОРМЫ</h5>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Удобная структура каталога и мгновенный поиск нужных товаров
+                                </li>
+                                <li class="list-group-item">Подробные описания, характеристики и инструкции к каждой
+                                    позиции</li>
+                                <li class="list-group-item">Качественные фото, видеообзоры и демонстрации оборудования
+                                </li>
+                                <li class="list-group-item">Простое оформление заказа и оперативная техническая
+                                    поддержка</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="catalog.html" class="card-link">Перейти в каталог товаров</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- разделитель -->
+        <span class="border-top divider"></span>
+
+        <!-- вторая секция -->
+        <div class="main-page-section-two" id="section-two">
+
+            <!-- хедлайн второй секции  -->
+            <h2 class="section-two-headline headline">
+                ПОЧЕМУ МЫ — ТЕХНОЛОГИИ, ПРОВЕРЕННЫЕ НА ПРАКТИКЕ
+            </h2>
+
+            <!-- карточки второй секции -->
+            <div class="container">
+                <div class="row d-flex justify-content-center gap-5 custom-card-gap">
+                    <div class="col-auto">
+                        <div class="card text-bg-dark" style="width: 27rem;">
+                            <img src="img/omon.png" class="card-img-top" alt="omon">
+                            <div class="card-body card-body-upper">
+                                <h5 class="card-title">ЦЕНЫ&nbsp;&nbsp; |&nbsp;&nbsp; ГАРАНТИЯ КАЧЕСТВА</h5>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Конкурентоспособные цены на весь ассортимент</li>
+                                <li class="list-group-item">Акции и скидки для постоянных клиентов</li>
+                                <li class="list-group-item">Строгий контроль качества каждого продаваемого товара
+                                </li>
+                                <li class="list-group-item">Гарантия производителя на всю продукцию
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#section-one" class="card-link">Что мы создаем?</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="card text-bg-dark" style="width: 27rem;">
+                            <img src="img/rep-code.png" class="card-img-top" alt="rep-code">
+                            <div class="card-body card-body-upper">
+                                <h5 class="card-title">НАДЕЖНОСТЬ&nbsp;&nbsp; | &nbsp;&nbsp;РЕПУТАЦИЯ</h5>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Быстрая доставка с полным отслеживанием заказа</li>
+                                <li class="list-group-item">Поддержка клиентов в режиме 24/7</li>
+                                <li class="list-group-item">Авторитетные бренды и проверенные поставщики</li>
+                                <li class="list-group-item">Положительные отзывы сотен клиентов</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="https://t.me/ob1101" target="_blank" class="card-link">Узнать больше о Sentinel</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- футер главной страницы -->
+    <footer class="footer-black text-white py-4">
+
+        <!-- первая часть футера: якорь наверх и соцсети -->
+        <div class="first-footer-part">
+
+            <!-- наверх  -->
+            <div class="go-up">
+                <a href="#sentinel-header" title="Наверх">⏏</a>
+            </div>
+
+            <!-- соцсети -->
+            <div class="social">
+                <a href="mailto:akmn140@gmail.com" target="_blank"><i class="bi bi-person-circle footer-icon"></i></a>
+                <a href="https://github.com/progen1tor" target="_blank"><i class="bi bi-github footer-icon"></i></a>
+                <a href="https://t.me/ob1101" target="_blank"><i class="bi bi-telegram footer-icon"></i></a>
+            </div>
+        </div>
+
+        <span class="border-top footer-divider"></span>
+
+        <!-- вторая часть футера: лицензия  -->
+        <div class="sec-footer-part">
+            <a href="https://docs.google.com/document/d/1ztQ5R3w9ewzbD-YblNddGogWkwsDoaPU1uzVj_aNad0/edit?usp=sharing" target="_blank">© 2025, Sentinel.</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="js/device-test.js"></script>
+</body>
+
+</html>

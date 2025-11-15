@@ -1,0 +1,365 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Tektur', sans-serif;
+    padding: 2rem 0;
+    scroll-behavior: smooth;
+    min-height: 100%;
+    position: relative;
+}
+
+/* заголовок + навбар */
+header {
+    margin-bottom: 3.6rem;
+}
+
+/* заголовок */
+.sentinel-heading {
+    text-align: center;
+    font-family: 'Black Ops One', sans-serif;
+    font-size: 3.125rem;
+    margin-bottom: 1.563rem;
+}
+
+/* увеличение ширины навбара */
+.navbar {
+    padding: 0.75rem 0;
+}
+
+/* расположение линков на навбаре */
+.navbar-collapse {
+    justify-content: center;
+}
+
+/* цвет навбара */
+.black-navbar {
+    background-color: black !important;
+}
+
+/* цвет выпадающего списка */
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* стиль ссылок в выпадающем списке */
+.dropdown-menu .dropdown-item {
+    color: #999;
+    transition: all 1s ease;
+    font-weight: 400;
+    font-size: 1.1rem;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+/* стиль ссылок в выпадающем списке при ховере */
+.dropdown-menu .dropdown-item:hover {
+    color: #ffffff;
+    background-color: #5e5e5e;
+}
+
+/* стиль ссылок на мейн части навбара */
+.nav-link {
+    transition: all 1s ease;
+    font-size: 1.2rem;
+    letter-spacing: 0.08em;
+}
+/* стиль ссылок на мейн части навбара при ховере*/
+.nav-link:hover {
+    color: white;
+}
+
+/* картинка корзины */
+.img-fluid {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;
+    top: -0.12rem;
+    transition: all 1s ease;
+}
+/* картинка корзины при ховере */
+.img-fluid:hover {
+    filter: brightness(0) invert(1);
+}
+
+/* секция карточек с отзывами */
+section.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 9rem;
+}
+
+/* див карточки с отзывом  */
+.card-review {
+    width: 75%;
+    max-width: 1150px;
+}
+
+/* хедер карточки  */
+.dark-header {
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.7rem 1.2rem 0.7rem 0;
+}
+
+/* звезды в хедере  */
+.stars {
+    font-size: 1.5rem;
+}
+
+/* див для аватарки + фуллнейма */
+.avatar-and-fullname {
+    display: flex;
+    align-items: center;
+}
+
+/* аватарка на карточке  */
+.avatar {
+    height: 110px;
+}
+
+/* тело карточки отзыва  */
+.card-body {
+    padding-top: 1.7rem;
+    padding-left: 1.7rem;
+    background-color: #dbdbdb;
+}
+
+/* текст отзыва  */
+.review-text {
+    font-size: 1.1rem;
+}
+
+/* футер карточки */
+.gray-footer {
+    display: flex;
+    align-items: center;
+    background-color: #b9b9b9;
+}
+/* сброс отступов  */
+.gray-footer p {
+    padding: 0.5rem 0 0.5rem 0.75rem;
+    margin-bottom: 0;
+    font-size: 1.05rem;
+    color: black;
+}
+
+/* линк на почту третьего юзера */
+.pseudo-link {
+    text-decoration: none;
+    color: black;
+    transition: all 1s ease;
+}
+.pseudo-link:hover {
+    color: rgb(76, 76, 76);
+}
+
+
+/* футер: цвет + позиционирование */
+.footer-black {
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* первая часть футера */
+.first-footer-part {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.3rem;
+    gap: 10rem;
+}
+
+/* позиционирование стрелки */
+.go-up {
+    padding-top: 0.1rem;
+}
+
+/* стили стрелки */
+.go-up a {
+    font-size: 2rem;
+    color: #5e5e5e;
+    transition: all 1s ease;
+    text-decoration: none;
+}
+/* стили стрелки при ховере */
+.go-up a:hover {
+    color: white;
+}
+
+/* позиционирование контейнера с линками на соцсети  */
+.social {
+    padding-bottom: 1rem;
+}
+
+/* отступы линков на соцсети  */
+.social a {
+    margin-right: 1.5rem;
+}
+.social a:last-child {
+    margin-right: 0;
+}
+
+/* стили кружков с соцсетями  */
+.footer-icon {
+    font-size: 2rem;
+    color: #5e5e5e;
+    transition: all 1s ease;
+}
+/* стили кружков с соцсетями при ховере */
+.footer-icon:hover {
+    color: white;
+}
+
+/* разделитель для футера */
+.footer-divider {
+    border-color: #5e5e5e !important ;
+    width: 85%;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+}
+
+/* вторая часть футера */
+.sec-footer-part {
+    display: flex;
+    justify-content: center;
+}
+
+/* линк на лицензию */
+.sec-footer-part a{
+    text-decoration: none;
+    color: #5e5e5e;
+    transition: all 1s ease;
+}
+
+/* линк на лицензию при ховере */
+.sec-footer-part a:hover {
+    color: white;
+}
+
+/* СРЕДНИЕ НОУТЫ ДО 1200 */
+@media (max-width: 1199.98px) {
+    .sentinel-heading {
+        font-size: 3rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        letter-spacing: 0.07em;
+    }
+
+    .custom-margin {
+        margin-right: 1.4rem !important;
+    }
+
+    .dropdown-menu .dropdown-item {
+        font-size: 0.9rem;
+    }
+
+    .img-fluid {
+        width: 1.2rem;
+        height: 1.2rem;
+        top: 0rem;
+    }
+
+}
+
+/* НОУТЫ ДО 992  */
+@media (max-width: 991.98px) {
+    .img-fluid {
+        width: 1.3rem;
+        height: 1.3rem;
+        position: relative;
+        top: 0.3rem;
+        left: -0.1rem;
+    }
+
+    button.navbar-toggler[aria-expanded="true"] {
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* ПЛАНШЕТЫ */
+@media (max-width: 767.98px) {
+}
+
+/* МОБИЛЬНИКИ */
+@media (max-width: 575.98px) {
+    .sentinel-heading {
+        font-size: 2.5rem;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .img-fluid {
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+
+    header {
+        margin-bottom: 2.6rem;
+    }
+
+    .first-footer-part {
+        gap: 5rem;
+    }
+
+    .social a {
+        margin-right: 1.1rem;
+    }
+
+    .dark-header {
+        font-size: 1.1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* фикс пробелов на мобилках */
+    .spaces {
+        display: none;
+    }
+
+    .stars {
+        font-size: 1.3rem;
+    }
+
+    .avatar-and-fullname {
+        display: flex;
+        align-items: center;
+        margin-bottom: 35px !important;
+    }
+
+    .avatar {
+        height: 90px;
+        position: absolute;
+        left: 22px;
+    }
+
+    .card-title {
+        position: relative;
+        left: 102px;
+        top: 5px;
+        font-size: 1rem;
+    }
+
+    .review-text {
+        font-size: 1rem;
+    }
+
+    .gray-footer p {
+        padding: 0;
+        font-size: 1rem;
+    }
+}

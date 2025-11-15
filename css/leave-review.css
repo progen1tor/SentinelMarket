@@ -1,0 +1,488 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Tektur', sans-serif;
+    padding: 2rem 0;
+    scroll-behavior: smooth;
+    min-height: 100%;
+    position: relative;
+}
+
+/* заголовок + навбар */
+header {
+    margin-bottom: 2.55rem;
+}
+
+/* заголовок */
+.sentinel-heading {
+    text-align: center;
+    font-family: 'Black Ops One', sans-serif;
+    font-size: 3.125rem;
+    margin-bottom: 1.563rem;
+}
+
+/* увеличение ширины навбара */
+.navbar {
+    padding: 0.75rem 0;
+}
+
+/* расположение линков на навбаре */
+.navbar-collapse {
+    justify-content: center;
+}
+
+/* цвет навбара */
+.black-navbar {
+    background-color: black !important;
+}
+
+/* цвет выпадающего списка */
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* стиль ссылок в выпадающем списке */
+.dropdown-menu .dropdown-item {
+    color: #999;
+    transition: all 1s ease;
+    font-weight: 400;
+    font-size: 1.1rem;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+/* стиль ссылок в выпадающем списке при ховере */
+.dropdown-menu .dropdown-item:hover {
+    color: #ffffff;
+    background-color: #5e5e5e;
+}
+
+/* стиль ссылок на мейн части навбара */
+.nav-link {
+    transition: all 1s ease;
+    font-size: 1.2rem;
+    letter-spacing: 0.08em;
+}
+
+/* стиль ссылок на мейн части навбара при ховере*/
+.nav-link:hover {
+    color: white;
+}
+
+/* картинка корзины */
+.img-fluid {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;  /* убрать это в адаптиве */
+    top: -0.12rem;  /* убрать это в адаптиве */
+    transition: all 1s ease;
+}
+
+/* картинка корзины при наведении */
+.img-fluid:hover {
+    filter: brightness(0) invert(1);
+}
+
+/* бэкграунд формы + отступ до футера + ширина*/
+.form-bg {
+    background-color: #dedede57;
+    padding: 2rem 4.5rem 1.5rem 4.5rem;
+    border-radius: 6px;
+    border: 1px solid #dee2e6;
+    margin-bottom: 16.3rem;
+    width: 75%;
+    max-width: 967.5px;
+}
+
+/* фикс расположения инпутов и радио  */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* сама форма с подтверждением заказа */
+.review-form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* заголовок формы  */
+.review-header {
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+    white-space: normal;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+/* подзаголовок формы  */
+.review-subheader {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 1.6rem;
+}
+
+/* фикс рядов: ширина === 100% контейнера */
+.row {
+    width: 100%;
+}
+
+/* элементы формы при фокусе  */
+.form-control:focus, .form-select:focus {
+    border-color: #5e5e5e;
+    box-shadow: 0px 0px 2px 1px rgba(34, 60, 80, 0.2);
+}
+
+/* отступ для элементов формы  */
+.form-elem-margin {
+    margin-bottom: 1.5rem;
+}
+/* .form-elem-forbtn-margin {
+    margin-bottom: 2.1rem;
+} */
+
+/* для радиокнопок: колонка -> ряд + паддинг как у остальных инпутов  */
+.col-to-row {
+    display: flex;
+    padding-left: 1rem;
+}
+
+/* отступ между двумя блоками с радиокнопками */
+.col-to-row:first-of-type {
+    margin-bottom: 1.4rem;
+}
+
+/* отступ для лейблов у радиокнопок  */
+.radio-label-margin {
+    margin-right: 1.5rem;
+}
+
+/* кастом радиокнопок */
+.form-check-input:checked {
+    background-color: rgb(0, 0, 0);
+    border-color: black;
+    box-shadow: none;
+}
+.form-check-input:active {
+    border: none;
+    box-shadow: none;
+}
+
+/* див для кнопки  */
+.for-btn {
+    align-self: center;
+    margin-top: -3.5rem;
+}
+/* кнопка подтверждения для формы  */
+.custom-btn-submit {
+    width: 280px;
+    height: 3.625rem;
+    background-color: black;
+    border: none;
+    font-size: 1.4rem !important;
+    transition: all 1s ease;
+    transform: translateY(7rem);
+}
+.custom-btn-submit:hover {
+    transform: translateY(7rem) scale(1.05);
+    background-color: black;
+}
+
+
+/* футер: цвет + позиционирование */
+.footer-black {
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* первая часть футера */
+.first-footer-part {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.3rem;
+    gap: 10rem;
+}
+
+/* позиционирование стрелки */
+.go-up {
+    padding-top: 0.1rem;
+}
+
+/* стили стрелки */
+.go-up a {
+    font-size: 2rem;
+    color: #5e5e5e;
+    transition: all 1s ease;
+    text-decoration: none;
+}
+
+/* стили стрелки при ховере */
+.go-up a:hover {
+    color: white;
+}
+
+/* позиционирование контейнера с линками на соцсети  */
+.social {
+    padding-bottom: 1rem;
+}
+
+/* отступы линков на соцсети  */
+.social a {
+    margin-right: 1.5rem;
+}
+.social a:last-child {
+    margin-right: 0;
+}
+
+/* стили кружков с соцсетями  */
+.footer-icon {
+    font-size: 2rem;
+    color: #5e5e5e;
+    transition: all 1s ease;
+}
+
+/* стили кружков с соцсетями при ховере */
+.footer-icon:hover {
+    color: white;
+}
+
+/* разделитель для футера */
+.footer-divider {
+    border-color: #5e5e5e !important ;
+    width: 85%;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+}
+
+/* вторая часть футера */
+.sec-footer-part {
+    display: flex;
+    justify-content: center;
+}
+
+/* линк на лицензию */
+.sec-footer-part a{
+    text-decoration: none;
+    color: #5e5e5e;
+    transition: all 1s ease;
+}
+
+/* линк на лицензию при ховере */
+.sec-footer-part a:hover {
+    color: white;
+}
+
+/* СРЕДНИЕ НОУТЫ ДО 1200 */
+@media (max-width: 1199.98px) {
+    .sentinel-heading {
+        font-size: 3rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        letter-spacing: 0.07em;
+    }
+
+    .custom-margin {
+        margin-right: 1.4rem !important;
+    }
+
+    .dropdown-menu .dropdown-item {
+        font-size: 0.9rem;
+    }
+
+    .img-fluid {
+        width: 1.2rem;
+        height: 1.2rem;
+        top: 0rem;
+    }
+
+    header {
+        margin-bottom: 2.4rem;
+    }
+
+    .form-bg {
+        margin-bottom: 15.9rem;
+    }
+
+    .review-header {
+        font-size: 1.725rem;
+    }
+
+    .review-subheader {
+        font-size: 1.17rem;
+    }
+
+    .custom-btn-submit {
+    width: 250px;
+    height: 3.4rem;
+    font-size: 1.3rem !important;
+    }
+}
+
+/* НОУТЫ ДО 992  */
+@media (max-width: 991.98px) {
+    .img-fluid {
+        width: 1.3rem;
+        height: 1.3rem;
+        position: relative;
+        top: 0.3rem;
+        left: -0.1rem;
+    }
+
+    button.navbar-toggler[aria-expanded="true"] {
+        margin-bottom: 0.5rem;
+    }
+
+    header {
+        margin-bottom: 2.35rem;
+    }
+
+    .form-bg {
+        padding: 2rem 1.5rem 1.5rem 1.5rem;
+        margin-bottom: 15.6rem;
+    }
+
+    .review-header {
+        padding: 0 7rem 0 7rem;
+        font-size: 1.7rem;
+    }
+
+    .review-subheader {
+        padding: 0 3rem 0 3rem;
+        font-size: 1.1rem;
+    }
+
+    .custom-btn-submit {
+        width: 250px;
+        height: 3.4rem;
+        font-size: 1.3rem !important;
+        transform: translateY(6.8rem);
+    }
+    .custom-btn-submit:hover {
+        transform: translateY(6.8rem) scale(1.05);
+    }
+}
+
+/* ПЛАНШЕТЫ */
+@media (max-width: 767.98px) {
+    header {
+        margin-bottom: 2.1rem;
+    }
+
+    .form-bg {
+        margin-bottom: 15.4rem;
+    }
+
+    .review-header {
+        padding: 0 5rem 0 5rem;
+        font-size: 1.5rem;
+    }
+
+    .review-subheader {
+        padding: 0 3.1rem 0 3.1rem;
+        font-size: 1.03rem;
+    }
+
+    input, select, option, label, legend {
+        font-size: 15px !important;
+    }
+
+    .custom-btn-submit {
+        width: 240px;
+        height: 3.2rem;
+        font-size: 1.2rem !important;
+        transform: translateY(6.5rem);
+    }
+    .custom-btn-submit:hover {
+        transform: translateY(6.5rem) scale(1.05);
+    }
+}
+
+/* МОБИЛЬНИКИ */
+@media (max-width: 575.98px) {
+    .sentinel-heading {
+        font-size: 2.5rem;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .img-fluid {
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+
+    .first-footer-part {
+        gap: 5rem;
+    }
+
+    .social a {
+        margin-right: 1.1rem;
+    }
+
+    header {
+        margin-bottom: 1.9rem;
+    }
+
+    .form-bg {
+        padding: 1rem 0.5rem 1rem 0.5rem;
+        margin-bottom: 15.1rem;
+    }
+
+    .col-to-row {
+        flex-wrap: wrap;
+    }
+
+    .review-header {
+        padding: 0 1.5rem 0 1.5rem;
+        font-size: 1.4rem;
+    }
+
+    .review-subheader {
+        padding: 0 2rem 0 2rem;
+        font-size: .95rem;
+    }
+
+    .fullname-email {
+        flex-direction: column;
+    }
+
+    /* фикс полей имени && почты */
+    .col-mobile {
+        width: 100%;
+    }
+    .col-mobile:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+
+    input, select, option, label, legend {
+        font-size: 13px !important;
+    }
+
+    .custom-btn-submit {
+        width: 244px;
+        height: 3.2rem;
+        font-size: 1.15rem !important;
+        transform: translateY(6rem);
+    }
+
+    .custom-btn-submit:hover {
+        transform: translateY(6rem) scale(1.05);
+    }
+}

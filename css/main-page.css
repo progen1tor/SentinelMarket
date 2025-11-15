@@ -1,0 +1,361 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Tektur', sans-serif;
+    padding: 2rem 0;
+    scroll-behavior: smooth;
+    min-height: 100%;
+    position: relative;
+}
+
+/* заголовок + навбар */
+header {
+    margin-bottom: 2.55rem;
+}
+
+/* заголовок */
+.sentinel-heading {
+    text-align: center;
+    font-family: 'Black Ops One', sans-serif;
+    font-size: 3.125rem;
+    margin-bottom: 1.563rem;
+}
+
+/* увеличение ширины навбара */
+.navbar {
+    padding: 0.75rem 0;
+}
+
+/* расположение линков на навбаре */
+.navbar-collapse {
+    justify-content: center;
+}
+
+/* цвет навбара */
+.black-navbar {
+    background-color: black !important;
+}
+
+/* цвет выпадающего списка */
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* стиль ссылок в выпадающем списке */
+.dropdown-menu .dropdown-item {
+    color: #999;
+    transition: all 1s ease;
+    font-weight: 400;
+    font-size: 1.1rem;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+/* стиль ссылок в выпадающем списке при ховере */
+.dropdown-menu .dropdown-item:hover {
+    color: #ffffff;
+    background-color: #5e5e5e;
+}
+
+/* стиль ссылок на мейн части навбара */
+.nav-link {
+    transition: all 1s ease;
+    font-size: 1.2rem;
+    letter-spacing: 0.08em;
+}
+
+/* стиль ссылок на мейн части навбара при ховере*/
+.nav-link:hover {
+    color: white;
+}
+
+/* картинка корзины */
+.img-fluid {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;  /* убрать это в адаптиве */
+    top: -0.12rem;  /* убрать это в адаптиве */
+    transition: all 1s ease;
+}
+
+/* картинка корзины при наведении */
+.img-fluid:hover {
+    filter: brightness(0) invert(1);
+}
+
+/* -------------------------- */
+
+/* внутренний контент */
+section.main-page-sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 12.3rem;
+}
+
+/* отступ от первого раздела */
+.main-page-section-one {
+    margin-bottom: 4rem;
+}
+
+/* первый заголовок */
+.headline {
+    margin-bottom: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* карточки кастом цвет + тени */
+.card {
+    background-color: black !important;
+    box-shadow: 5px 5px 7px 1px rgba(34, 60, 80, 0.2);
+}
+
+/* уменьшение высоты дива для хедлайна */
+.card-body {
+    height: 3.438rem;
+}
+
+/* линки на карточках  */
+.card-link {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    transition: all 0.5s ease;
+}
+
+/* ховер линков на карточках */
+.card-link:hover {
+    transform: scale(1.05) translate(2.5%);
+}
+
+/* разделитель между карточками  */
+.divider {
+    border-color: rgb(140, 140, 140) !important;
+    margin-bottom: 3.125rem;
+    width: 85%;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ---------------------------- */
+
+/* футер: цвет + позиционирование */
+.footer-black {
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* первая часть футера */
+.first-footer-part {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.3rem;
+    gap: 10rem;
+}
+
+/* позиционирование стрелки */
+.go-up {
+    padding-top: 0.1rem;
+}
+
+/* стили стрелки */
+.go-up a {
+    font-size: 2rem;
+    color: #5e5e5e;
+    transition: all 1s ease;
+    text-decoration: none;
+}
+
+/* стили стрелки при ховере */
+.go-up a:hover {
+    color: white;
+}
+
+/* позиционирование контейнера с линками на соцсети  */
+.social {
+    padding-bottom: 1rem;
+}
+
+/* отступы линков на соцсети  */
+.social a {
+    margin-right: 1.5rem;
+}
+.social a:last-child {
+    margin-right: 0;
+}
+
+/* стили кружков с соцсетями  */
+.footer-icon {
+    font-size: 2rem;
+    color: #5e5e5e;
+    transition: all 1s ease;
+}
+
+/* стили кружков с соцсетями при ховере */
+.footer-icon:hover {
+    color: white;
+}
+
+/* разделитель для футера */
+.footer-divider {
+    border-color: #5e5e5e !important ;
+    width: 85%;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+}
+
+/* вторая часть футера */
+.sec-footer-part {
+    display: flex;
+    justify-content: center;
+}
+
+/* линк на лицензию */
+.sec-footer-part a{
+    text-decoration: none;
+    color: #5e5e5e;
+    transition: all 1s ease;
+}
+
+/* линк на лицензию при ховере */
+.sec-footer-part a:hover {
+    color: white;
+}
+
+/* СРЕДНИЕ НОУТЫ ДО 1200 */
+@media (max-width: 1199.98px) {
+    .sentinel-heading {
+        font-size: 3rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        letter-spacing: 0.07em;
+    }
+
+    .custom-margin {
+        margin-right: 1.4rem !important;
+    }
+
+    .dropdown-menu .dropdown-item {
+        font-size: 0.9rem;
+    }
+
+    .img-fluid {
+        width: 1.2rem;
+        height: 1.2rem;
+        top: 0rem;
+    }
+
+    .headline {
+        font-size: 1.75rem;
+    }
+
+    .custom-card-gap {
+        gap: 2rem !important;
+    }
+}
+
+/* НОУТЫ ДО 992  */
+@media (max-width: 991.98px) {
+    .img-fluid {
+        width: 1.3rem;
+        height: 1.3rem;
+        position: relative;
+        top: 0.3rem;
+        left: -0.1rem;
+    }
+
+    button.navbar-toggler[aria-expanded="true"] {
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* ПЛАНШЕТЫ */
+@media (max-width: 767.98px) {
+}
+
+/* МОБИЛЬНИКИ */
+@media (max-width: 575.98px) {
+    .sentinel-heading {
+        font-size: 2.5rem;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .img-fluid {
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+
+    .headline {
+        font-size: 1.6rem;
+        padding: 0 1rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    section.main-page-sections {
+        margin-bottom: 11.3rem;
+    }
+
+    .main-page-section-one {
+        margin-bottom: 3rem;
+    }
+
+    .divider {
+        margin-bottom: 2.75rem;
+    }
+
+    .col-auto {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card {
+        width: 90% !important;
+    }
+
+    .card-title {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .card-body-upper {
+        height: 4rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .list-group-item {
+        font-size: 0.9rem;
+    }
+
+    .card-link {
+        font-size: 0.95rem;
+    }
+
+    .first-footer-part {
+        gap: 5rem;
+    }
+
+    .social a {
+        margin-right: 1.1rem;
+    }
+}

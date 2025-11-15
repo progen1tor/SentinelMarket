@@ -1,0 +1,415 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Tektur', sans-serif;
+    padding: 2rem 0;
+    scroll-behavior: smooth;
+    min-height: 100%;
+    position: relative;
+}
+
+/* заголовок + навбар */
+header {
+    margin-bottom: 2.55rem;
+}
+
+/* заголовок */
+.sentinel-heading {
+    text-align: center;
+    font-family: 'Black Ops One', sans-serif;
+    font-size: 3.125rem;
+    margin-bottom: 1.563rem;
+}
+
+/* увеличение ширины навбара */
+.navbar {
+    padding: 0.75rem 0;
+}
+
+/* расположение линков на навбаре */
+.navbar-collapse {
+    justify-content: center;
+}
+
+/* цвет навбара */
+.black-navbar {
+    background-color: black !important;
+}
+
+/* цвет выпадающего списка */
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* стиль ссылок в выпадающем списке */
+.dropdown-menu .dropdown-item {
+    color: #999;
+    transition: all 1s ease;
+    font-weight: 400;
+    font-size: 1.1rem;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+/* стиль ссылок в выпадающем списке при ховере */
+.dropdown-menu .dropdown-item:hover {
+    color: #ffffff;
+    background-color: #5e5e5e;
+}
+
+/* стиль ссылок на мейн части навбара */
+.nav-link {
+    transition: all 1s ease;
+    font-size: 1.2rem;
+    letter-spacing: 0.08em;
+}
+/* стиль ссылок на мейн части навбара при ховере*/
+.nav-link:hover {
+    color: white;
+}
+
+/* картинка корзины */
+.img-fluid {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;
+    top: -0.12rem;
+    transition: all 1s ease;
+}
+/* картинка корзины при ховере */
+.img-fluid:hover {
+    filter: brightness(0) invert(1);
+}
+
+/* секция каталога */
+section.catalog-section {
+    margin-bottom: 10.7rem;
+}
+
+/* хедер каталога */
+.catalog-title {
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* див: кнопки для сортировки */
+.sorting-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+/* отдельная кнопка для сортировки */
+.sort-btn {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #bab9b9;
+    height: 2.5rem;
+    width: 200px;
+    white-space: normal;
+    overflow-wrap: break-word;
+    font-size: 1.15rem;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+.sort-btn:hover {
+    background-color: #000000;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* форма с карточками + кнопкой в корзину */
+.cart-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* отступ до кнопки */
+.container {
+    margin-bottom: 1.1rem;
+}
+
+/* транзишн на карточки */
+.card {
+    transition: all 0.5s ease;
+}
+/* ховер на карточки */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 3px 3px 3px 1px #5454547a;
+}
+
+/* фикс отступов карточки */
+.card-body {
+    padding-bottom: 0.3rem;
+}
+
+/* текст прайса */
+.price-card-text {
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+/* контейнер для текста "заказать" и инпута с кол-вом */
+.order {
+    display: flex;
+}
+
+/* текст "заказать" */
+.order p {
+    margin-right: 1.42rem;
+    font-size: 1.15rem;
+    padding-top: 0.3rem;
+}
+
+/* инпут кол-ва */
+.order-input {
+    height: 2.3rem;
+    border-color: #bab9b9;
+}
+/* инпут кол-ва при фокусе*/
+.order-input:focus {
+    border-color: #5e5e5e;
+    box-shadow: 0px 0px 2px 1px rgba(34, 60, 80, 0.2);
+    /* box-shadow: none; */
+}
+
+/* контейнер для кнопок */
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+/* кнопка в корзину для поисковика */
+.order-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid #bab9b9;
+    height: 3.9rem;
+    width: 250px;
+    white-space: normal;
+    overflow-wrap: break-word;
+    font-size: 1.4rem;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+/* кнопка в корзину при ховере */
+.order-btn:hover {
+    background-color: #000000;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* линк на корзину  */
+.cart-lnk {
+    vertical-align: middle;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #212529;
+}
+/* линк на корзину при ховере */
+.cart-lnk:hover {
+    color: white;
+}
+
+/* футер: цвет + позиционирование */
+.footer-black {
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* первая часть футера */
+.first-footer-part {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.3rem;
+    gap: 10rem;
+}
+
+/* позиционирование стрелки */
+.go-up {
+    padding-top: 0.1rem;
+}
+
+/* стили стрелки */
+.go-up a {
+    font-size: 2rem;
+    color: #5e5e5e;
+    transition: all 1s ease;
+    text-decoration: none;
+}
+/* стили стрелки при ховере */
+.go-up a:hover {
+    color: white;
+}
+
+/* позиционирование контейнера с линками на соцсети  */
+.social {
+    padding-bottom: 1rem;
+}
+
+/* отступы линков на соцсети  */
+.social a {
+    margin-right: 1.5rem;
+}
+.social a:last-child {
+    margin-right: 0;
+}
+
+/* стили кружков с соцсетями  */
+.footer-icon {
+    font-size: 2rem;
+    color: #5e5e5e;
+    transition: all 1s ease;
+}
+/* стили кружков с соцсетями при ховере */
+.footer-icon:hover {
+    color: white;
+}
+
+/* разделитель для футера */
+.footer-divider {
+    border-color: #5e5e5e !important ;
+    width: 85%;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+}
+
+/* вторая часть футера */
+.sec-footer-part {
+    display: flex;
+    justify-content: center;
+}
+
+/* линк на лицензию */
+.sec-footer-part a{
+    text-decoration: none;
+    color: #5e5e5e;
+    transition: all 1s ease;
+}
+
+/* линк на лицензию при ховере */
+.sec-footer-part a:hover {
+    color: white;
+}
+
+
+/* СРЕДНИЕ НОУТЫ ДО 1200 */
+@media (max-width: 1199.98px) {
+    .sentinel-heading {
+        font-size: 3rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        letter-spacing: 0.07em;
+    }
+
+    .custom-margin {
+        margin-right: 1.4rem !important;
+    }
+
+    .dropdown-menu .dropdown-item {
+        font-size: 0.9rem;
+    }
+
+    .img-fluid {
+        width: 1.2rem;
+        height: 1.2rem;
+        top: 0rem;
+    }
+
+}
+
+/* НОУТЫ ДО 992  */
+@media (max-width: 991.98px) {
+    .img-fluid {
+        width: 1.3rem;
+        height: 1.3rem;
+        position: relative;
+        top: 0.3rem;
+        left: -0.1rem;
+    }
+
+    .sorting-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sort-btn.me-4 {
+        margin-right: 0 !important;
+        margin-bottom: 1rem;
+    }
+
+    .sort-btn {
+        width: 18rem;
+    }
+
+    button.navbar-toggler[aria-expanded="true"] {
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* ПЛАНШЕТЫ */
+@media (max-width: 767.98px) {
+    .buttons {
+        flex-direction: column;
+        gap: 1.3rem;
+    }
+
+    .order-btn {
+        height: 3rem;
+        width: 286px;
+        font-size: 1.35rem;
+    }
+
+    .cart-lnk {
+        font-size: 1.35rem;
+    }
+}
+
+/* МОБИЛЬНИКИ */
+@media (max-width: 575.98px) {
+    .sentinel-heading {
+        font-size: 2.5rem;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .img-fluid {
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+
+    .first-footer-part {
+        gap: 5rem;
+    }
+
+    .social a {
+        margin-right: 1.1rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 1.3rem;
+    }
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reviews.css">
+    <title>Reviews — Sentinel</title>
+    <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicons/favicon.svg" />
+    <link rel="shortcut icon" href="favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="favicons/site.webmanifest" />
+</head>
+
+<body>
+    <!-- хедлайн + навбар -->
+    <header class="sentinel-header" id="sentinel-header">
+
+        <!-- главный хедер вверху -->
+        <h1 class="sentinel-heading">SENTINEL</h1>
+
+        <!-- навбар -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark black-navbar">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Переключатель навигации">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item me-5 custom-margin">
+                            <a class="nav-link" href="cart.html"><img class="img-fluid" id="shopping-cart"
+                                    src="img/shopping-cart.svg" alt="shopping-cart" title="Перейти в корзину"></a>
+                        </li>
+                        <li class="nav-item me-5 custom-margin">
+                            <a class="nav-link" aria-current="page" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item me-5 custom-margin">
+                            <a class="nav-link" href="catalog.html">Магазин</a>
+                        </li>
+                        <li class="nav-item me-5 custom-margin">
+                            <a class="nav-link" href="leave-review.html">Оставить отзыв</a>
+                        </li>
+                        <li class="nav-item me-5 custom-margin">
+                            <a class="nav-link"
+                                href="https://docs.google.com/document/d/1Q8ilpNiYS8Bm-1XsLSa6kfAyMpSe_cumKoAbiisHeFA/edit?usp=sharing"
+                                target="_blank">Использование кода</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Дополнительно
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="reviews.html">Посмотреть отзывы клиентов</a>
+                                </li>
+                                <li><a class="dropdown-item" href="https://progen1tor.github.io/Sentinel/"
+                                        target="_blank" id="first-part">Перейти на первую часть
+                                        проекта</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="reviews">
+
+        <!-- отзыв 1 -->
+        <div class="card card-review mb-5">
+            <div class="card-header dark-header text-end">
+                Общая оценка:<span class="spaces">&nbsp;&nbsp;</span><span class="stars">★★★★★</span>
+            </div>
+            <div class="card-body">
+                <div class="avatar-and-fullname mb-4">
+                    <img src="img/omon-avatar.png" alt="omon-avatar" class="avatar me-4">
+                    <h5 class="card-title">Ратников<br>Алекс<br>Олегович</h5>
+                </div>
+                <p class="card-text review-text mb-2">Работаю с оборудованием Sentinel уже второй год. Камеры
+                    демонстрируют стабильную работу даже при температуре минус 30 — картинка чёткая, без задержек.
+                    Система контроля
+                    доступа интегрируется без лишней головной боли. Для спецслужб — оптимальное решение: надёжно,
+                    оперативно, с соблюдением требований безопасности.</p>
+            </div>
+            <div class="card-footer text-body-secondary gray-footer">
+                <p>rtnkvalx13@yandex.ru</p>
+            </div>
+        </div>
+
+        <!-- отзыв 2 -->
+        <div class="card card-review mb-5">
+            <div class="card-header dark-header text-end">
+                Общая оценка:<span class="spaces">&nbsp;&nbsp;</span><span class="stars">★★★★★</span>
+            </div>
+            <div class="card-body">
+                <div class="avatar-and-fullname mb-4">
+                    <img src="img/pgirl-avatar.png" alt="pgirl-avatar" class="avatar me-4">
+                    <h5 class="card-title">Волкова<br>Алиса<br>Сергеевна</h5>
+                </div>
+                <p class="card-text review-text mb-2">Оборудование Sentinel установлено в нашем отделении для
+                    видеонаблюдения и охраны входной зоны. Камеры работают стабильно, изображение чёткое даже при слабом
+                    освещении. Система проста в управлении, сотрудники быстро освоили интерфейс. В целом, решение
+                    оказалось надёжным и удобным для повседневной службы.</p>
+            </div>
+            <div class="card-footer text-body-secondary gray-footer">
+                <p>avolkova@yandex.ru</p>
+            </div>
+        </div>
+
+        <!-- отзыв 3 -->
+        <div class="card card-review mb-5">
+            <div class="card-header dark-header text-end">
+                Общая оценка:<span class="spaces">&nbsp;&nbsp;</span><span class="stars">★★★★★</span>
+            </div>
+            <div class="card-body">
+                <div class="avatar-and-fullname mb-4">
+                    <img src="img/cat-avatar.png" alt="cat-avatar" class="avatar  me-4">
+                    <h5 class="card-title">Anonymous<br>User<br>10113186</h5>
+                </div>
+                <p class="card-text review-text mb-2">Искал систему охраны для дачи — выбрал Sentinel по совету
+                    знакомого. Установил сам, всё подключилось без проблем. Камеры дают отличную картинку даже ночью.
+                    Приложение удобное, можно смотреть с телефона. Не ожидал, что за такую цену получу такой уровень
+                    качества.</p>
+            </div>
+            <div class="card-footer text-body-secondary gray-footer">
+                <p><a class="pseudo-link" href="mailto:signecho16@gmail.com">signecho16@gmail.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- футер главной страницы -->
+    <footer class="footer-black text-white py-4">
+
+        <!-- первая часть футера: якорь наверх и соцсети -->
+        <div class="first-footer-part">
+
+            <!-- наверх  -->
+            <div class="go-up">
+                <a href="#sentinel-header" title="Наверх">⏏</a>
+            </div>
+
+            <!-- соцсети -->
+            <div class="social">
+                <a href="mailto:akmn140@gmail.com" target="_blank"><i class="bi bi-person-circle footer-icon"></i></a>
+                <a href="https://github.com/progen1tor" target="_blank"><i class="bi bi-github footer-icon"></i></a>
+                <a href="https://t.me/ob1101" target="_blank"><i class="bi bi-telegram footer-icon"></i></a>
+            </div>
+        </div>
+
+        <span class="border-top footer-divider"></span>
+
+        <!-- вторая часть футера: лицензия  -->
+        <div class="sec-footer-part">
+            <a href="https://docs.google.com/document/d/1ztQ5R3w9ewzbD-YblNddGogWkwsDoaPU1uzVj_aNad0/edit?usp=sharing"
+                target="_blank">© 2025, Sentinel.</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="js/device-test.js"></script>
+</body>
+
+</html>

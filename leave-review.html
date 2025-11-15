@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/leave-review.css">
+    <title>Feedback — Sentinel</title>
+    <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicons/favicon.svg" />
+    <link rel="shortcut icon" href="favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="favicons/site.webmanifest" />
+</head>
+
+<body>
+
+    <!-- хедлайн + навбар -->
+    <header class="sentinel-header" id="sentinel-header">
+
+        <!-- главный хедер вверху -->
+        <h1 class="sentinel-heading">SENTINEL</h1>
+
+        <!-- навбар -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark black-navbar">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Переключатель навигации">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item me-5 custom-margin">
+                            <a class="nav-link" href="cart.html"><img class="img-fluid" id="shopping-cart"
+                                    src="img/shopping-cart.svg" alt="shopping-cart" title="Перейти в корзину"></a>
+                        </li>
+                        <li class="nav-item me-5 custom-margin">
+                            <a class="nav-link" aria-current="page" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item me-5 custom-margin">
+                            <a class="nav-link" href="catalog.html">Магазин</a>
+                        </li>
+                        <li class="nav-item me-5 custom-margin">
+                            <a class="nav-link" href="leave-review.html">Оставить отзыв</a>
+                        </li>
+                        <li class="nav-item me-5 custom-margin">
+                            <a class="nav-link"
+                                href="https://docs.google.com/document/d/1Q8ilpNiYS8Bm-1XsLSa6kfAyMpSe_cumKoAbiisHeFA/edit?usp=sharing"
+                                target="_blank">Использование кода</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Дополнительно
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="reviews.html">Посмотреть отзывы клиентов</a>
+                                </li>
+                                <li><a class="dropdown-item" href="https://progen1tor.github.io/Sentinel/"
+                                        target="_blank" id="first-part">Перейти на первую часть
+                                        проекта</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- форма для отзыва -->
+    <section class="review-form-section">
+
+        <!-- заголовок -->
+        <h2 class="review-header">Обратная связь о качестве продукции и сервиса Sentinel</h2>
+
+        <!-- подзаголовок -->
+        <h3 class="review-subheader">Мы ценим ваше мнение. Пожалуйста, заполните форму, <br>чтобы помочь нам улучшить
+            качество
+            продукции и обслуживания.</h3>
+
+        <!-- бэкграунд формы -->
+        <div class="form-bg">
+
+            <!-- сама форма  -->
+            <form action="https://yandex.com/search?" target="_blank">
+                <div class="row fullname-email form-elem-margin">
+                    <div class="col-6 col-mobile">
+                        <label for="fullname" class="form-label">Ваше ФИО:</label>
+                        <input type="text" class="form-control" id="fullname" name="fullname" value="Иванов Иван Иванович">
+                    </div>
+                    <div class="col-6 col-mobile">
+                        <label for="email" class="form-label">Ваш email:</label>
+                        <input type="text" class="form-control" id="email" name="email" value="example@yandex.ru">
+                    </div>
+                </div>
+                <div class="row form-elem-margin">
+                    <div class="col-12">
+                        <label for="organization" class="form-label">Организация, в которой вы работаете:</label>
+                        <input type="text" class="form-control" id="organization" name="organization" value="ООО Sentinel">
+                    </div>
+                </div>
+                <div class="row form-elem-margin">
+                    <div class="col-12">
+                        <label for="used-products" class="form-label"> Какие продукты Sentinel вы использовали?</label>
+                        <select id="used-products" name="used-products" class="form-select">
+                            <option value="">Выберите из списка:</option>
+                            <option value="surveillance-system">Системы видеонаблюдения</option>
+                            <option value="signalization">Сигнализации</option>
+                            <option value="motionsensors">Датчики движений</option>
+                            <option value="access-control-systems">Системы контроля доступа</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row form-elem-margin">
+                    <legend class="col-form-label col pt-0">Оцените качество использованной Вами продукции, где 5 — отлично, 1 — очень плохо.</legend>
+                    <div class="col-sm-10 col-to-row">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="prod-quality" id="prod-excellent"
+                                value="5" checked>
+                            <label class="form-check-label radio-label-margin" for="prod-excellent">
+                                5
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="prod-quality" id="prod-good"
+                                value="4">
+                            <label class="form-check-label radio-label-margin" for="prod-good">
+                                4
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="prod-quality" id="prod-satisfactory"
+                                value="3">
+                            <label class="form-check-label radio-label-margin" for="prod-satisfactory">
+                                3
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="prod-quality" id="prod-bad"
+                                value="2">
+                            <label class="form-check-label radio-label-margin" for="prod-bad">
+                                2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="prod-quality" id="prod-very-bad"
+                                value="1">
+                            <label class="form-check-label" for="prod-very-bad">
+                                1
+                            </label>
+                        </div>
+                    </div>
+
+                    <legend class="col-form-label col pt-0">Оцените качество обслуживания, где 5 — отлично, 1 — очень плохо.</legend>
+                    <div class="col-sm-10 col-to-row">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="service-quality" id="service-excellent"
+                                value="5" checked>
+                            <label class="form-check-label radio-label-margin" for="service-excellent">
+                                5
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="service-quality" id="service-good"
+                                value="4">
+                            <label class="form-check-label radio-label-margin" for="service-good">
+                                4
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="service-quality" id="service-satisfactory"
+                                value="3">
+                            <label class="form-check-label radio-label-margin" for="service-satisfactory">
+                                3
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="service-quality" id="service-bad"
+                                value="2">
+                            <label class="form-check-label radio-label-margin" for="service-bad">
+                                2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="service-quality" id="service-very-bad"
+                                value="1">
+                            <label class="form-check-label" for="service-very-bad">
+                                1
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row form-elem-margin">
+                    <div class="col-12">
+                        <label for="most-liked" class="form-label">Что Вам особенно понравилось в продукции и/или сервисе Sentinel?</label>
+                        <textarea name="most-liked" id="most-liked" class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="row form-elem-margin">
+                    <div class="col-12">
+                        <label for="recommended-upgrades" class="form-label">Какие улучшения для продукции и/или сервиса Sentinel Вы бы могли предложить?</label>
+                        <textarea name="recommended-upgrades" id="recommended-upgrades" class="form-control"></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <legend class="col-form-label col pt-0">Готовы ли вы рекомендовать нашу компанию?</legend>
+                    <div class="col-sm-10 col-to-row">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="recommendation" id="yes"
+                                value="yes" checked>
+                            <label class="form-check-label radio-label-margin" for="yes">
+                                Да
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="recommendation" id="no-recommend"
+                                value="no">
+                            <label class="form-check-label radio-label-margin" for="no-recommend">
+                                Нет
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="recommendation" id="do-not-know"
+                                value="do-not-know">
+                            <label class="form-check-label" for="do-not-know">
+                                Затрудняюсь ответить
+                            </label>
+                        </div>
+                    </div>
+
+                    <legend class="col-form-label col pt-0">Разрешаете ли Вы использовать Ваш отзыв на сайте?</legend>
+                    <div class="col-sm-10 col-to-row">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="review-usage" id="yes-with-name"
+                                value="yes-with-name" checked>
+                            <label class="form-check-label radio-label-margin" for="yes-with-name">
+                                Да, с указанием имени
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="review-usage" id="yes-anonymously"
+                                value="yes-anonymously">
+                            <label class="form-check-label radio-label-margin" for="yes-anonymously">
+                                Да, анонимно
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="review-usage" id="no-usage"
+                                value="no">
+                            <label class="form-check-label" for="no-usage">
+                                Нет
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="for-btn">
+                    <input type="submit" class="btn btn-primary custom-btn-submit" value="Оставить отзыв">
+                </div>
+            </form>
+        </div>
+    </section>
+
+         <!-- футер главной страницы -->
+    <footer class="footer-black text-white py-4">
+
+        <!-- первая часть футера: якорь наверх и соцсети -->
+        <div class="first-footer-part">
+
+            <!-- наверх  -->
+            <div class="go-up">
+                <a href="#sentinel-header" title="Наверх">⏏</a>
+            </div>
+
+            <!-- соцсети -->
+            <div class="social">
+                <a href="mailto:akmn140@gmail.com" target="_blank"><i class="bi bi-person-circle footer-icon"></i></a>
+                <a href="https://github.com/progen1tor" target="_blank"><i class="bi bi-github footer-icon"></i></a>
+                <a href="https://t.me/ob1101" target="_blank"><i class="bi bi-telegram footer-icon"></i></a>
+            </div>
+        </div>
+
+        <span class="border-top footer-divider"></span>
+
+        <!-- вторая часть футера: лицензия  -->
+        <div class="sec-footer-part">
+            <a href="https://docs.google.com/document/d/1ztQ5R3w9ewzbD-YblNddGogWkwsDoaPU1uzVj_aNad0/edit?usp=sharing" target="_blank">© 2025, Sentinel.</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="js/device-test.js"></script>
+</body>
