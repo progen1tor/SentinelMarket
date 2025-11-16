@@ -93,7 +93,7 @@ header {
     padding: 2rem 4.5rem 1.5rem 4.5rem;
     border-radius: 6px;
     border: 1px solid #dee2e6;
-    margin-bottom: 16.3rem;
+    margin-bottom: 15.74rem;
     width: 75%;
     max-width: 967.5px;
 }
@@ -177,7 +177,7 @@ form {
 /* див для кнопки  */
 .for-btn {
     align-self: center;
-    margin-top: -3.5rem;
+    height: 1px;
 }
 /* кнопка подтверждения для формы  */
 .custom-btn-submit {
@@ -187,10 +187,10 @@ form {
     border: none;
     font-size: 1.4rem !important;
     transition: all 1s ease;
-    transform: translateY(7rem);
+    transform: translateY(3.5rem);
 }
 .custom-btn-submit:hover {
-    transform: translateY(7rem) scale(1.05);
+    transform: translateY(3.5rem) scale(1.05);
     background-color: black;
 }
 
