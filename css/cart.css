@@ -231,11 +231,12 @@ form {
     background-color: black;
     border: none;
     font-size: 1.25rem;
-    transition: all 1s ease;
+    transition: all 0.75s ease;
 }
 .custom-btn-submit:hover {
-    background-color: black;
-    animation: shake 0.7s ease;
+    background-color: rgb(255, 255, 255);
+    color: #212529;
+    border: 1px solid #dee2e6;
 }
 
 
