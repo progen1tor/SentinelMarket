@@ -40,7 +40,7 @@ goToCartBtn.addEventListener('click', goToCartFunc);
 
 
 
-// сортировка товаров (помогите)
+// сортировка товаров
 const container = document.getElementById('container');  // контейнер со всеми карточками
 const containerCopied = document.getElementById('container').innerHTML;  // копия для резета сортировки
 const cards = Array.from(container.querySelectorAll('.col'));  // каждая карточка
